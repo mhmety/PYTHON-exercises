@@ -1,0 +1,18 @@
+vize=int(input("vize notunu giriniz: "))
+final=int(input("final notunu giriniz: "))
+sunum=input("öğrenci sunum yaptı mı?: ")
+proje=input("öğrenci proje yaptı mı?: ")
+
+vizeort=vize/100*25
+finalort=final/100*35
+if sunum=="evet":
+    sunum=10
+elif sunum=="hayır":
+    sunum=0
+
+if proje=="evet":
+    proje=30
+elif proje=="hayır":
+    proje=0
+
+print("dönem sonu notunuz: {}".format(vizeort+finalort+sunum+proje))
