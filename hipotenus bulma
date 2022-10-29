@@ -1,0 +1,5 @@
+a = int(input("Kısa kenarı girin : "))
+b = int(input("Uzun kenarı girin : "))
+
+hip = (a**2 + b**2) ** (1/2)
+print(hip)
