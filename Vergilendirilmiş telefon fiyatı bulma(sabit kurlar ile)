@@ -1,0 +1,14 @@
+telefon=int(input("telefon fiyatı giriniz: "))
+
+if telefon<1500:
+    otv=telefon+(telefon*25)/100
+elif 1500<telefon<3000:
+    otv=telefon+(telefon*40)/100
+else :
+    otv=telefon+(telefon*50)/100
+
+kdv=otv+(otv*18)/100
+
+print("telefonun vergilendirilmiş fiyatı: {} ".format(kdv))
+
+
